@@ -1,0 +1,4 @@
+SITE_NAME=Giordano Eventos
+PUBLIC_BASE_URL=https://giordanoeventos.com
+ADMIN_EMAIL=robertamsperandio@gmail.com
+ADMIN_PASSWORD=replace-with-a-private-password

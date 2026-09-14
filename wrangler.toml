@@ -1,0 +1,22 @@
+name = "giordano-eventos"
+main = "src/worker.js"
+compatibility_date = "2026-09-14"
+workers_dev = true
+routes = [
+  { pattern = "giordanoeventos.com/*", zone_name = "giordanoeventos.com" },
+  { pattern = "www.giordanoeventos.com/*", zone_name = "giordanoeventos.com" }
+]
+
+[assets]
+directory = "public"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "CONTENT_DB"
+database_name = "giordano_db"
+database_id = "fda5f388-3d45-4e26-95d5-843b66bcd29c"
+
+[vars]
+SITE_NAME = "Giordano Eventos"
+PUBLIC_BASE_URL = "https://giordanoeventos.com"
+ADMIN_EMAIL = "robertamsperandio@gmail.com"

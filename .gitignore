@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.config/
+.config*/
+.npm-cache/
+.dev.vars
+*.log
+dist/
+build/
+.DS_Store
+Thumbs.db
