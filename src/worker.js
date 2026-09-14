@@ -255,7 +255,7 @@ const pages = {
     description: "Conheca a lideranca executiva da Giordano Eventos.",
     body: `
     <section id="equipe" class="team-section">
-      <article class="profile-card">
+      <article class="profile-card with-photo">
         <div class="profile-copy">
           <p class="profile-index">01 - Lideranca executiva</p>
           <h2>Maria Ruth Giordano</h2>
@@ -281,6 +281,9 @@ const pages = {
             </div>
           </div>
         </div>
+        <figure class="profile-photo">
+          <img src="/maria-ruth-giordano.webp" alt="Retrato profissional de Maria Ruth Giordano">
+        </figure>
       </article>
 
       <article class="profile-card with-photo">
@@ -310,8 +313,7 @@ const pages = {
           </div>
         </div>
         <figure class="profile-photo">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=82" alt="Imagem demonstrativa de lideranca executiva">
-          <figcaption>Imagem demonstrativa</figcaption>
+          <img src="/roberta-mansur-sperandio.webp" alt="Retrato profissional de Roberta Mansur Sperandio">
         </figure>
       </article>
     </section>`,
