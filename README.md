@@ -78,11 +78,36 @@ Esta pasta foi organizada para virar a fonte oficial do projeto no GitHub.
 
 Recomendacao de fluxo daqui em diante:
 
-1. Fazer alteracoes no codigo local.
-2. Criar commit no Git.
-3. Subir para o GitHub.
-4. Publicar na Cloudflare a partir da versao versionada.
-5. Evitar mudancas diretas em producao sem commit.
+1. Criar uma branch a partir de `main`.
+2. Fazer alteracoes no codigo local ou pelo GitHub.
+3. Abrir uma Pull Request com resumo claro do que mudou.
+4. Revisar a PR antes do merge.
+5. Fazer merge somente depois da aprovacao.
+6. Publicar na Cloudflare a partir da versao versionada.
+7. Evitar mudancas diretas em producao sem commit.
+
+## Fluxo de PR
+
+Padrao recomendado para proximas alteracoes:
+
+```bash
+git checkout main
+git pull
+git checkout -b nome-da-mudanca
+# editar arquivos
+git add .
+git commit -m "Resumo da mudanca"
+git push -u origin nome-da-mudanca
+```
+
+Depois, abrir uma Pull Request para `main`.
+
+Cada PR deve informar:
+
+- o que mudou;
+- quais paginas ou arquivos foram afetados;
+- se houve ou nao deploy em producao;
+- quais validacoes foram feitas.
 
 ## Observacoes importantes
 
